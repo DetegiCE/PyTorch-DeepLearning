@@ -39,3 +39,20 @@ Input에서 가중치와 Hidden Layer을 거쳐 Output을 내보내는 과정
 위 두 과정을 반복하여 가중치를 업데이트 하면서 신경망의 Output 값이 실제 값에 가까워지며 모델 학습이 이루어짐
 
 Feed Forward와 Back Propagation의 한 과정을 Epoch(세대)라고 부름
+
+## 활성 함수 (Activation Function)
+
+- 신호를 입력받아 처리하는 함수
+- ![](https://miro.medium.com/max/1170/1*abHGVMc8bTFVFSvB6ZYaBg.png)
+- 신경망에서는 기본적으로 비선형 활성 함수를 사용
+
+### 시그모이드 함수
+- ![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Logistic-curve.svg/1200px-Logistic-curve.svg.png)
+
+- 입력 값에 대해서 0 이하이면 0.5 이하, 0 이상이면 0.5 이상의 값을 출력하는 함수 (Scaling)
+- 시그모이드 함수의 경우, Back Propagation 과정 중에 Gradient Vanishing 현상이 발생할 수 있음
+
+## 경사 하강법
+
+- Gradient Descent Method
+
