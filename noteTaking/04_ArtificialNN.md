@@ -56,3 +56,24 @@ Feed Forward와 Back Propagation의 한 과정을 Epoch(세대)라고 부름
 
 - Gradient Descent Method
 
+## Universal Approximation Theorem
+
+- Hidden Layer가 1개 이상인 신경망은 학습 데이터 내에서 어떤 함수든 근사시킬 수 있다
+
+- "신경망이 엄청 좋은 모델이구나"
+    - 학습 데이터 내에서만 한정 (과적합의 문제 발생)
+
+- "Hidden Layer가 1개 이상이면 굳이 Layer를 깊게 해야 하나?"
+    - 깊은 Layer = 복잡한 모델
+
+# NN의 단점
+
+## Overfitting
+
+- 완벽히 해결하는 방법은 없음
+- 실험 설계를 통해 적절히 나누어 적절한 모델과 변수를 선택해야 함
+
+## Gradient Vanishing Problem
+- 기울기가 사라지는 현상
+- Sigmoid 함수의 output은 0~1 사이이나, 미분 할 경우 최댓 값은 0.25
+- Hidden Layer가 깊어질 수록 sigmoid 를 미분하여 곱하는데 값이 점점 0에 수렴하게 됨
